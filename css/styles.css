@@ -208,6 +208,8 @@ body {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
+  transition: opacity 250ms var(--transform-function),
+    visibility 250ms var(--transform-function);
 }
 .backdrop.is-hidden {
   opacity: 0;
@@ -362,12 +364,14 @@ body {
   left: 0;
   bottom: 0;
 
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 70px;
   width: 100%;
   line-height: 1.14;
   text-align: center;
   text-transform: uppercase;
-  padding: 27px 82px;
   background-color: rgba(47, 48, 58, 0.8);
   color: var(--main-white-color);
 }
@@ -418,8 +422,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: fill 250ms var(--transform-function);
-  transition: background-color 250ms var(--transform-function);
+  transition: background-color 250ms var(--transform-function),
+    color 250ms var(--transform-function);
 }
 .people-soc-icon {
   fill: currentColor;
@@ -455,8 +459,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: fill 250ms var(--transform-function);
-  transition: border 250ms var(--transform-function);
+  transition: border 250ms var(--transform-function),
+    color 250ms var(--transform-function);
 }
 
 .clients-logo-icon {
@@ -577,9 +581,9 @@ body {
 
   color: var(--title-text-color);
   background-color: var(--secondary-grey-color);
-  transition: color 250ms var(--transform-function);
-  transition: background-color 250ms var(--transform-function);
-  transition: box-shadow 250ms var(--transform-function);
+  transition: color 250ms var(--transform-function),
+    background-color 250ms var(--transform-function),
+    box-shadow 250ms var(--transform-function);
 }
 .filter-btn:active,
 .filter-btn:hover,
