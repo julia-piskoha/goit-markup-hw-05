@@ -369,6 +369,7 @@ body {
   justify-content: center;
   height: 70px;
   width: 100%;
+  font-weight: 700;
   line-height: 1.14;
   text-align: center;
   text-transform: uppercase;
@@ -656,6 +657,7 @@ body {
   transform: translateY(100%);
   transition: transform 250ms var(--transform-function);
 }
-.cards-item:hover .cards-overlay {
+.cards-link:hover .cards-overlay,
+.cards-link:focus .cards-overlay {
   transform: translateY(0%);
 }
